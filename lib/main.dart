@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sos_car/screen/profile/profile_screen.dart';
 //import 'package:sos_car/screen/splash/splash_screen.dart';
 import 'package:sos_car/routes.dart';
 import 'package:sos_car/theme.dart';
 import 'package:flutter/services.dart';
+
+import 'screen/splash/splash_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -29,8 +30,7 @@ class MyApp extends StatelessWidget {
       theme: theme(),
       //theme: ThemeData.light(),
       //home: SplashScreen(),
-      //initialRoute: SplashScreen.routeName,
-      initialRoute: ProfileScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: routes,
     );
   }
